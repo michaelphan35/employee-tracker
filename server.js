@@ -55,7 +55,7 @@ const systemStart = function() {
 
 function viewAllEmployees() {
     console.log("retrieving all employee information");
-    db.query("SELECT employee.id, employee.first_name, employee.last_name, roles.title, department.name AS department, roles.salary FROM employee LEFT JOIN roles on employee.role.id = role.id left JOIN department on roles.department_id = department.id", function(err, answer) {
+    db.query("SELECT employee.id, employee.first_name, employee.last_name, roles.title, department.name AS department, roles.salary FROM employee LEFT JOIN roles ON employee.role_id = roles.id LEFT JOIN department on roles.department_id = department.id;", function(err, answer) {
         console.log("\n Employees retrieved \n");
         console.table(answer);
     });
@@ -67,6 +67,7 @@ function viewAllRoles() {
         console.log("\n Roles Retrieved \n");
         console.table(answer);
     });
+    systemStart();
 }
 
 function viewAllDepartments() {
@@ -74,6 +75,7 @@ function viewAllDepartments() {
         console.log("\n Departments Retrieved \n");
         console.table(answer);
     });
+    systemStart();
 }
 
 function addEmployee() {
@@ -221,3 +223,5 @@ function addRole() {
             })
     })
 }
+
+systemStart();
