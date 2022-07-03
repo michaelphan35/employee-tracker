@@ -27,11 +27,11 @@ none
 ## Contribution
 no other contributers for this project.
 
-## Screenshots of the Project
-![Application Screenshot](./media/html_creation.jpg?raw=true "Application Screenshot")
+## Screenshots
+![Application Screenshot](./media/screenshot_12.jpg?raw=true "Application Screenshot")
 
 ## Video:
-Please click on video link that shows how to opperate the application:
+[Please click on video link that shows how to opperate the application] (https://drive.google.com/file/d/1V3uZlFB_STZ6pBV0gauGDsW08jusKibO/view)
 
 ## License
 [GPL](https://choosealicense.com/licenses/gpl-3.0/)
